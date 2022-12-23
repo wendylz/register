@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录注册</title>
+</head>
+<script>
+    function openwin1(){
+        mywindow=window.open('','', 'width=200,height=250');
+        mywindow.document.write("<from><p>hey,bro!这里是登录中心</p><p>用户名：</p><input type='text' placeholder='请输入账号'></br><p>密码：</p><input type='password' value=''></br></br><input type='submit' value='登录'>");
+        mywindow.focus();
+        mywindow.document.body.style.backgroundColor = 'dimgray'
+    }
+    function openwin2(){
+        mywindow=window.open('','', 'width=200,height=250');
+        mywindow.document.write("<from><p>hey,bro!这里是注册中心</p><p>用户名：</p><input type='text' placeholder='请输入账号'></br><p>密码：</p><input type='password' value=''></br></br><input type='submit' value='注册'>");
+        mywindow.focus();
+        mywindow.document.body.style.backgroundColor = 'slategrey'
+    }
+</script>
+<style>
+    .ok{
+        width: 220px;
+        height: 120px;
+        border-style: solid;
+        background-color:burlywood;
+        color:slategrey;
+       
+    }
+    .ok1{
+        margin-top: 30px;
+        margin-left: 65px;
+    }
+</style>
+<body>
+<div class="ok">
+    <div class="ok1" >
+        <a href="#" onclick="openwin1()">登录</a>  |  <a href="#" onclick="openwin2()">注册</a>
+        <p>这是主页面</p>
+    </div>
+
+</div>
+</body>
+</html>
